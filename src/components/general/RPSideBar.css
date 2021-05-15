@@ -1,0 +1,107 @@
+.rp-sidebar-main_devel{
+    width: 50%;
+    height: 100%;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: black;
+}
+
+.rp-sidebar-main_release{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+/*
+.rp-sidebar-main{
+    width: 500px;
+    height: 400px;
+    border-width: 3px;
+    border-style: dotted;
+    border-color: yellow;
+}
+*/
+
+#id_RPSideBar_Main > aside{
+    display: inline-block;
+}
+#id_AsideBody{
+    display: inline-block;
+    background-color: yellow;
+    border: black solid 2px;
+    width: 88%;
+}
+
+#id_AsideMain{
+    width: 10%;
+    background-color: #cce5ff;
+    border: red solid 2px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#id_AsideArrow{
+    width: 2%;
+    background-color: red;
+    border: red solid 2px;
+    vertical-align: top;
+}
+
+.icon-white /*,
+.nav-pills > .active > a > [class^="icon-"],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^="icon-"],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^="icon-"],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:focus > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > li > a:focus > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"],
+.dropdown-submenu:hover > a > [class^="icon-"],
+.dropdown-submenu:focus > a > [class^="icon-"],
+.dropdown-submenu:hover > a > [class*=" icon-"],
+.dropdown-submenu:focus > a > [class*=" icon-"]*/ {
+	background-image: url("sideBar_Images/glyphicons-halflings-white.png");
+}
+
+/* This class applies to the any class which name starts with icon-
+** This represents a defined section of an image that is set in the
+** background-image property. The image is a table of symbols that 
+** could be used for dynamic settings of html items. Single Symbol
+** position will be determined by the background-position propriety 
+*/
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    right: 5px;
+    width: 14px;
+    height: 14px;
+    margin-top: 1px;
+    line-height: 14px;
+    vertical-align: bottom;
+    background-image: url("sideBar_Images/glyphicons-halflings-white.png");
+    background-repeat: no-repeat;
+}
+
+/*SIMPLE CLASSES*/
+.icon-chevron-up {
+    background-position: -288px -120px;
+}
+
+.icon-chevron-right {
+    background-position: -455px -71px;
+}
+
+.icon-chevron-left {
+    background-position: -430px -71px;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
+}
