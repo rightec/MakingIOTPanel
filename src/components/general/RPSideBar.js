@@ -54,18 +54,23 @@ const RPSideBar = (props) => {
         console.log("RPSideBar - usEffect on isOpen: " , isOpen);
         let aside_MainId = document.getElementById("id_AsideMain");
         let aside_ArrowId = document.getElementById("id_AsideArrow");
+        let aside_Body = document.getElementById("id_AsideBody");
         let i_ToggleIcon = document.getElementById("id_ToggleIcon");
+        
         
           if ((aside_MainId !== null) &&
               (aside_ArrowId !== null) &&
-              (i_ToggleIcon !== null)) {
+              (i_ToggleIcon !== null) &&
+              (aside_Body !== null)) {
               if (isOpen === false) {
                   aside_MainId.style.setProperty("display", "none");
-                  // aside_ArrowId.style.setProperty("display", "block");
+                  aside_ArrowId.style.setProperty("display", "inline-block");
+                  aside_Body.style.setProperty("width", "98%");
                   i_ToggleIcon.className="icon-chevron-right icon-white";
               } else {
                   aside_MainId.style.setProperty("display", "inline-block");
                   aside_ArrowId.style.setProperty("display", "inline-block");
+                  aside_Body.style.setProperty("width", "88%");
                   i_ToggleIcon.className="icon-chevron-left icon-white";
               }
           } // else

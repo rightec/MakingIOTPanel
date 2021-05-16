@@ -33,15 +33,16 @@
 }
 
 #id_AsideMain{
-    width: 10%;
+    width: 11%;
     background-color: #cce5ff;
     border: red solid 2px;
     margin: 0px;
     padding: 0px;
+    text-align: center;
 }
 
 #id_AsideArrow{
-    width: 2%;
+    width: 1%;
     background-color: red;
     border: red solid 2px;
     vertical-align: top;
